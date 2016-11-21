@@ -62,14 +62,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ReactiveUI">
       <HintPath>..\packages\reactiveui-core.6.0.1\lib\Portable-Win81+WPA81\ReactiveUI.dll</HintPath>
     </Reference>
-    <Reference Include="Splat">
-      <HintPath>..\packages\Splat.1.6.0\lib\Portable-Win81+Wpa81\Splat.dll</HintPath>
+    <Reference Include="Splat, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Splat.2.0.0\lib\Portable-Win81+Wpa81\Splat.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Reactive.Core">
       <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-win81+wpa81\System.Reactive.Core.dll</HintPath>
@@ -91,6 +93,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.Akavache.Mobile_WinRT.config" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
